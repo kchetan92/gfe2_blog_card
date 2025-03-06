@@ -1,0 +1,121 @@
+/* Put any custom CSS styles here.  */
+/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: rgb(249, 250, 251);
+  background: linear-gradient(
+    147deg,
+    rgba(249, 250, 251, 1) 0%,
+    rgba(210, 214, 219, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.blog-card {
+  width: 340px;
+  margin-top: 120px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-holder {
+  height: 288px;
+  overflow: hidden;
+}
+
+.tag {
+  background-color: #f0fdf4;
+  border-radius: 100px;
+  border-color: #bbf7d0;
+  border-width: 1px;
+  color: #15803d;
+  display: inline;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.text-container {
+  padding: 24px 16px;
+}
+
+h2.article-title {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.description {
+  padding-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #525252;
+}
+
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+.read-more {
+  margin-top: 24px;
+  color: #4338ca;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 0 4px 2px;
+  margin-left: -2px;
+}
+
+.read-more::after {
+  content: url("/img/arrow-right-line.svg");
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+
+.read-more:focus,
+.read-more:hover {
+  color: #3730a3;
+}
+
+.read-more:focus {
+  box-shadow: 0 0 0 1px #444ce7, 0 0 0 4px rgba(66, 76, 231, 0.12);
+}
+
+.read-more:disabled {
+  color: #a3a3a3;
+}
+
+.read-more:disabled::after {
+  content: url("/img/arrow-right-line-disabled.svg");
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
